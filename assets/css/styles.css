@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -62,8 +63,28 @@ body {
   margin-right: 15px;
 }
 
+/* Position Marker */
+
+.position__marker {
+  display: none;
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1800px) {
+  .position__marker {
+    display: initial;
+    position: fixed;
+    top: 40%;
+    left: 20px;
+    z-index: 9999;
+    transition: all 1s ease-in-out;
+  }
+}
+
+/* Position Marker */
+
 /* Navbar */
 #mainNav {
+  background: var(--white);
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   font-family: "Manrope", sans-serif;
@@ -128,9 +149,7 @@ body {
   box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
 }
 
- 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-item::after {
     content: "";
     position: absolute;
@@ -169,33 +188,7 @@ body {
 }
 /* Navbar*/
 
-/* Back to top Button*/
-.back-to-top {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  font-size: 3.5rem;
-  z-index: 100;
-}
-
-.back-to-top .backIcon {
-  background: var(--title-color);
-  border: 2x solid var(--yellow);
-  border-radius: 50%;
-  padding: 10px;
-  transform: scale(0.7);
-}
-
-.back-to-top:hover .backIcon {
-  opacity: 0.7;
-}
-
-/* Back to top Button*/
-
 /* About */
-
-#about {
-}
 
 #about .container-fluid {
   width: 100%;
@@ -204,6 +197,7 @@ body {
 
 #about h1 {
   font-weight: 700;
+  font-size: 3rem;
 }
 
 .about__subtitle {
@@ -212,13 +206,32 @@ body {
 }
 
 .about__text {
-  line-height: 2.2;
-  font-size: 1.2rem;
+  line-height: 2;
+  font-size: 1.3rem;
 }
 
 .about__social {
   margin: 1rem 0;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  transition: color 0.2s ease-in-out;
 }
+
+.behance:hover {
+  color: #0057FF;
+}
+
+.twitter:hover {
+  color: #1DA1F2;
+}
+
+.instagram:hover {
+  color: #C42289;
+}
+.dribble:hover {
+  color: #E45189;
+}
+
 
 @media screen and (max-width: 768px) {
   .about__social {
@@ -361,9 +374,6 @@ body {
 }
 
 .resume__button {
-}
-
-.resume__button {
   border-radius: 10px;
   background-color: var(--button-background);
   flex: 1;
@@ -460,7 +470,7 @@ body {
 
 .contact__items {
   background: var(--background-resume-item);
- }
+}
 
 .contact__items-number {
   font-size: 1.1rem;
@@ -502,9 +512,8 @@ body {
     font-size: 1.5rem;
   }
 
- .contact__items {
-  padding: 1rem 1rem 0rem 0rem;
-
+  .contact__items {
+    padding: 1rem 1rem 0rem 0rem;
   }
 
   .contact__items-number {
@@ -516,40 +525,39 @@ body {
   .contact__items-text {
     font-size: 1.1rem;
     padding-left: 1rem;
-   }
-  
+  }
 }
 
 /* Contact */
 
 /* Footer */
-#footer{
+#footer {
   background-color: var(--text-color);
   color: var(--white);
   padding: 1rem 0;
   margin: 2rem auto 0 auto;
 }
 
-.footer__name{
+.footer__name {
   font-size: 1.2rem;
 }
 
-.footer__icons a  svg path {
+.footer__icons a svg path {
   fill: var(--white);
 }
 
-.footer__up{
-  color: white!important;
+.footer__up {
+  color: white !important;
 }
 
-.footer__up img{
+.footer__up img {
   background: var(--white);
   padding: 0.5rem;
   transform: scale(1.1);
- border-radius: 10px;
+  border-radius: 10px;
 }
 
-.footer__up:hover{
+.footer__up:hover {
   text-decoration: none;
 }
 

@@ -14,17 +14,15 @@
         } else {
             $("#mainNav").removeClass("navbar-shrink");
         }
-    };   
+    };
     // Collapse now if page is not at top
     navbarCollapse();
-
     // Collapse the navbar link is clicked 
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
     });
 
-    // backToTop Button hided by default 
-    $('#back-to-top').fadeOut();
+
     //  scroll actions
     $(window).scroll(navbarCollapse);
     $(window).scroll(function () {
@@ -34,12 +32,22 @@
             $('#back-to-top').fadeOut();
         }
     });
-    // scroll body to 0px on click
-    $('#back-to-top').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
+ 
+
+    // Page Marker Actions
+    $('.position__image').attr('src', "./assets/images/markers/about.svg");
+
+    $(window).scroll(function () {
+        if ($(document).scrollTop() == 0 && $(document).scrollTop() < 333) {
+            $('.position__image').attr('src', "./assets/images/markers/about.svg");
+        } else if ($(document).scrollTop() > 333 && $(document).scrollTop() < 3100) {
+            $('.position__image').attr('src', "./assets/images/markers/portfolio.svg");
+        } else if ($(document).scrollTop() > 3100 && $(document).scrollTop() < 3600) {
+            $('.position__image').attr('src', "./assets/images/markers/resume.svg");
+        } else if ($(document).scrollTop() > 3600) {
+            $('.position__image').attr('src', "./assets/images/markers/contact.svg");
+
+        }
     });
 
     //initiliaze AOS
@@ -52,6 +60,6 @@
             }
         }
     );
-  
+
 
 })(jQuery); // End of use strict
