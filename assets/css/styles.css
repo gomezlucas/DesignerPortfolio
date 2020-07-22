@@ -88,6 +88,38 @@ body {
   margin-right: 15px;
 }
 
+/*Preloader*/
+
+.preloader-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--white);
+  transition: all 1s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+.preloader-text {
+  color: var(--secondary-color);
+  letter-spacing: 0.7rem;
+  margin-left: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .preloader-text {
+    text-align: center;
+  }
+}
+/*Preloader*/
+
 /* Position Marker */
 .position__marker {
   display: none;
