@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+
+  <title> Baker's Portfolio - Documentation</title>
+
+  <meta name="description" content="" />
+  <meta name="author" content="Team Syntax" />
+  <meta name="copyright" content="Team Syntax" />
+  <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter" />
+  <meta name="date" content="2020-07-04T00:00:00+02:00" />
+
+  <link rel="stylesheet" href="assets/css/documenter_style.css" media="all" />
+  <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen" />
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+  <script src="assets/js/jquery.js"></script>
+
+  <script src="assets/js/jquery.scrollTo.js"></script>
+  <script src="assets/js/jquery.easing.js"></script>
+
+  <script>
+    document.createElement('section')
+    var duration = '500',
+      easing = 'swing'
+  </script>
+  <script src="assets/js/script.js"></script>
+
+  <style>
+    html {
+      background-color: #ffffff;
+      color: #383838;
+    }
+
+    ::-moz-selection {
+      background: #444444;
+      color: #dddddd;
+    }
+
+    ::selection {
+      background: #444444;
+      color: #dddddd;
+    }
+
+    #documenter_sidebar #documenter_logo {
+      background-image: url(assets/images/logo.png);
+    }
+
+    a {
+      color: #0000ff;
+    }
+
+    .btn {
+      border-radius: 3px;
+    }
+
+    .btn-primary {
+      background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+      background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+      background-image: -webkit-gradient(linear,
+          0 0,
+          0 0088cc%,
+          from(#dddddd),
+          to(#0044cc));
+      background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+      background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+      background-image: linear-gradient(top, #0088cc, #0044cc);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+      border-color: #0044cc #0044cc #bfbfbf;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-primary.disabled,
+    .btn-primary[disabled] {
+      border-color: #0088cc #0088cc #bfbfbf;
+      background-color: #0044cc;
+    }
+
+    hr {
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    #documenter_sidebar,
+    #documenter_sidebar ul a {
+      background-color: #dddddd;
+      color: #222222;
+    }
+
+    #documenter_sidebar ul a {
+      -webkit-text-shadow: 1px 1px 0px #eeeeee;
+      -moz-text-shadow: 1px 1px 0px #eeeeee;
+      text-shadow: 1px 1px 0px #eeeeee;
+    }
+
+    #documenter_sidebar ul {
+      border-top: 1px solid #aaaaaa;
+    }
+
+    #documenter_sidebar ul a {
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #aaaaaa;
+      color: #444444;
+    }
+
+    #documenter_sidebar ul a:hover {
+      background: #444444;
+      color: #dddddd;
+      border-top: 1px solid #444444;
+    }
+
+    #documenter_sidebar ul a.current {
+      background: #444444;
+      color: #dddddd;
+      border-top: 1px solid #444444;
+    }
+
+    #documenter_copyright {
+      display: block !important;
+      visibility: visible !important;
+    }
+  </style>
+</head>
+
+<body class="documenter-project-go">
+  <div id="documenter_sidebar">
+    <a href="#documenter_cover" id="documenter_logo"></a>
+    <ul id="documenter_nav">
+      <li><a class="current" href="#documenter_cover">Start</a></li>
+
+      <li>
+        <a href="#files_structure" title="Files Structure">Files Structure</a>
+      </li>
+      <li>
+        <a href="#html_structure" title="HTML Structure">HTML Structure</a>
+      </li>
+      <li>
+        <a href="#css_structure" title="CSS Structure">CSS Structure</a>
+      </li>
+      <li><a href="#javascript" title="JavaScript">JavaScript</a></li>
+      <li><a href="#fonts" title="Fonts">Fonts</a></li>
+      <li><a href="#icons" title="Icons">Icons</a></li>
+      <li><a href="#logo" title="Logo">Logo</a></li>
+      <li><a href="#animation" title="Logo">Animation</a></li>
+      <li><a href="#sliders" title="Sliders">Sliders</a></li>
+      <li>
+        <a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a>
+      </li>
+    </ul>
+    <div id="documenter_copyright">
+      Copyright Team Syntax 2020<br />
+      made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+    </div>
+  </div>
+  <div id="documenter_content">
+    <section id="documenter_cover">
+      <h1> Baker's Portfolio </h1>
+      <h2>Responsive HTML5 Template and Boostrap</h2>
+      <div id="documenter_buttons"></div>
+      <hr />
+      <ul>
+        <li>created: 10/07/2020</li>
+        <li>latest update: 10/07/2020</li>
+        <li>by: @lucasD</li>
+
+        <li>
+          email:
+          <a href="mailto:gomez.d.lucas@gmail.com"> gomez.d.lucas@gmail.com</a>
+        </li>
+      </ul>
+      <p></p>
+    </section>
+
+    <section id="files_structure">
+      <div class="page-header">
+        <h3>Files Structure</h3>
+        <hr class="notop" />
+      </div>
+      <pre class="prettyprint lang-html linenums">
+- assets/css                    (Template CSS)
+- assets/images                 (All Images)
+- assets/fonts                  (All font families)
+- assets/js                     (Template JS)</pre>
+      <p>
+        &nbsp;
+      </p>
+    </section>
+    <section id="html_structure">
+      <div class="page-header">
+        <h3>HTML Structure</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        The template is based on Bootstrap Framework -
+        http://getbootstrap.com/
+      </div>
+      <div>
+        The default Bootstrap grid system utilizes 12 columns, making for a
+        1170px wide depending on your viewport.
+      </div>
+      <div>
+        Below 480px viewports, the columns become fluid and stack vertically.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        Create a .row and add the appropriate number of .col-* columns.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;row&quot;&gt;
+        
+       { Level 1 column }
+
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-6&quot;&gt; { Level 2 } &lt;/div&gt;
+            &lt;div class=&quot;col-6&quot;&gt; { Level 2 } &lt;/div&gt;
+        &lt;/div&gt;
+
+&lt;/div&gt;</pre>
+      </div>
+      <p>
+        If you need more information, please visit this site:
+        <a href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a>
+      </p>
+    </section>
+    <section id="css_structure">
+      <div class="page-header">
+        <h3>CSS Structure</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        The organization of the CSS is one of our priorities.
+      </div>
+      <div>
+        These are the CSS file we&#39;re using in the template:
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <pre class="prettyprint lang-html linenums">
+- assets/
+  - css/
+    - style.css                      - (Main CSS file) 
+    - swiper/swiper-bundle.min.css   - (Swiper Minified CSS file)
+    - bootstrap/bootstrap.min.css    - (Bootstrap Minified CSS file)
+    - aos/aos.css                    - (Aos Minified CSS file)
+
+</pre>
+    </section>
+    <section id="javascript">
+      <div class="page-header">
+        <h3>JavaScript</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        jQuery - is a Javascript library that greatly reduces the amount of
+        code that you must write.
+      </div>
+      <div>
+        For more information, please visit
+        <a href="http://www.jquery.com" target="_blank">http://www.jquery.com/</a>
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        All the JavaScript libraries and files are included at the bottom of
+        every HTML page like this:
+      </div>
+      <div>
+        <pre class="prettyprint lang-html linenums">
+&lt;!-- Main Jquery JS --&gt;
+&lt;script src=&quot;./assets/js/jquery/jquery-3.5.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;!-- Bootstrap JS --&gt;
+&lt;script src=&quot;./assets/js/bootstrap/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
+&lt;!-- Popper JS --&gt;
+&lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Swiper JS --&gt;
+&lt;script src=&quot;/assets/js/swiper/swiper-bundle.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Swiper Custome JS --&gt;
+&lt;script src=&quot;./assets/js/swiper/swiperjs-custom.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Aos JS --&gt;
+&lt;script src=&quot;./assets/js/aos/aos.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Custom JS --&gt;
+&lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
+</pre>
+      </div>
+      <p>&nbsp;</p>
+    </section>
+    <section id="fonts">
+      <div class="page-header">
+        <h3>Fonts</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        To change the embedded font, please take a look in the head part of
+        assets/css/styles.css:
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <pre class="prettyprint lang-html linenums">
+          @font-face {
+            font-family: "Clicker Script";
+            src: url("../fonts/ClickerScript-Regular.ttf");
+          }
+          
+          /*default version */
+          @font-face {
+            font-family: "Nunito Sans";
+            src: url("../fonts/NunitoSans-Regular.ttf");
+          }
+          
+          /*Light version */
+          @font-face {
+            font-family: "Nunito Sans";
+            src: url("../fonts/NunitoSans-Light.ttf");
+          }
+          
+          /*Bold version */
+          @font-face {
+            font-family: "Nunito Sans";
+            src: url("../fonts/NunitoSans-Bold.ttf");
+          }
+                      </pre>
+      </div>
+      <p>&nbsp;</p>
+      <div>
+        <div>
+          To change the font, first go to http://www.google.com/webfonts. Then put the file downloaded inside the fonts
+          folder.
+
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          Then edit --header-font or --text-font in
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          <pre class="prettyprint lang-css linenums">
+            :root {
+              --title-font: "Clicker Script", cursive;
+              --text-font: "Nunito Sans", sans-serif;
+              --primary-color: #664e00;
+              --secondary-color: #e6b001;
+              --title-color: #cc9d01;
+              --navbar-text: #4b420b;
+              --grey-color: #e5e5e5;
+              --green-color: #adb901;
+              --background-masthead: linear-gradient( 
+                90deg, 
+                 rgba(229,229,229,1) 0%,
+                 rgba(243,243,243,1) 65%, 
+                 rgba(255,255,255,1) 97%);
+              --background-about: linear-gradient(
+                34.34deg,
+                #a7b2c3 19.51%,
+                #ccd5df 31.73%,
+                #d5dee6 50.37%,
+                #d5dee6 64.83%
+              );
+              --footer-color: #bbc443;
+              --white-color: #fff;
+              --black-color: #000000;
+            }</pre>
+        </div>
+      </div>
+    </section>
+    <section id="icons">
+      <div class="page-header">
+        <h3>Icons</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        All Icons are located in the images directory
+      </div>
+      <div>
+        &nbsp;
+      </div>
+
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <p>
+          We are using svg/png icons which you can get more and add to
+          assets/images/icons
+        </p>
+      </div>
+    </section>
+    <section id="logo">
+      <div class="page-header">
+        <h3>Logo</h3>
+        <hr class="notop" />
+      </div>
+      <p>
+        Open index.html and find this part of code. Just change path to your
+        image logo
+      </p>
+      <pre class="prettyprint lang-html linenums">
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+</pre>
+    </section>
+
+
+    <section id="animation">
+      <div class="page-header">
+        <h3>Animation on Scroll </h3>
+        <hr class="notop" />
+      </div>
+      <p>
+        This template uses Aos to animate the elements. To change the time of animation, settings, or disable it
+        /assets/js/custom.js
+      </p>
+      <pre class="prettyprint lang-html linenums">
+        //initiliaze AOS
+        AOS.init(
+            {
+                offset: 100,
+                disable: function () {
+                    var maxWidth = 650;
+                    return window.innerWidth &gt; maxWidth;
+                }
+            }
+        );
+             </pre>
+      <p>
+        You can also can change the configuration on each element. Example:
+      </p>
+      <pre class="prettyprint lang-html linenums">
+        &lt;div data-aos=&quot; fade-up&quot; &gt; &lt;/div&gt >
+      </pre>
+
+      <p>
+        Find more info in the official documentation <a
+          href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+      </p>
+    </section>
+    <section id="sliders">
+      <div class="page-header">
+        <h3>Sliders</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        SwipeJs slider is the slider you will find in the content. It's an essay
+        to use lighweight carousel with some decent features.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <div>
+          <div>
+            Estate Section slider has class &#39;swiper-slide&#39; and each slide
+            has &#39;&lt;div class=&quot;portfolio__card&quot;&gt;&#39; wrapper
+            for easy find where slide html code start. If you want to remove or add some
+            slide just remove/add div with all content like this &#39;&lt;div
+            class=&quot;portfolio__card&quot;&gt;&#39;
+          </div>
+          <div>
+            &nbsp;
+          </div>
+        </div>
+        <pre class="prettyprint lang-html linenums">
+          &lt;!-- Slider main container --&gt;
+          &lt;div class=&quot;swiper-container&quot;&gt;
+            &lt;!-- Additional required wrapper --&gt;
+            &lt;div class=&quot;swiper-wrapper&quot;&gt;
+              &lt;!-- Slides --&gt;
+              &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;portfolio__card&quot;&gt;
+                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
+                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; Desserts &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;portfolio__card&quot;&gt;
+                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
+                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; cupcakes &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;portfolio__card&quot;&gt;
+                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
+                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; Cakes &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- If we need pagination --&gt;
+            &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+      
+            &lt;!-- If we need navigation buttons --&gt;
+            &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+      </pre>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          If you want change option for sliders you need to open
+          assets/js/swiper/swiperjs-custom.js and find &#39;// Our Sliders Start&#39; function
+          and set true/false for option what you wont to change.
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <pre class="prettyprint lang-js linenums">
+          // Swiper JS
+          var mySwiper = new Swiper('.swiper-container', {
+             // Optional parameters
+             direction: 'horizontal',
+             loop: true,
+             // Navigation arrows
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+             breakpoints: {
+                 640: {
+                   slidesPerView: 1,
+                   spaceBetween: 20,
+                 },
+                 768: {
+                   slidesPerView: 2,
+                   spaceBetween: 40,
+                 },
+                 1024: {
+                   slidesPerView: 3,
+                   spaceBetween: 50,
+                 },
+               }
+         
+          
+         })
+</pre>
+      </div>
+      <p>
+        You can find more documentation here&nbsp;<a href="https://swiperjs.com/demos/"
+          target="_blank">https://swiperjs.com/demos/</a>
+      </p>
+    </section>
+    <section id="sources_and_credits">
+      <div class="page-header">
+        <h3>Sources and Credits</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        Fonts:
+      </div>
+      <div>
+        <strong>Google Fonts</strong> -
+        <a href="http://www.google.com/webfonts/">http://www.google.com/webfonts/</a>
+      </div>
+      <div></div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        Scripts:
+      </div>
+      <div>
+        <strong>jQuery</strong> -
+        <a href="http://www.jquery.com/">http://www.jquery.com/</a>
+      </div>
+      <div>
+        <strong>Bootstrap Framework</strong> -
+        <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a>
+      </div>
+      <div>
+        <strong>Popper Js</strong> -&nbsp;<a href="https://popper.js.org/">https://popper.js.org/</a>
+      </div>
+
+      <div>
+        <strong>Swiper Js</strong> -&nbsp;<a href="https://swiperjs.com/demos/">https://swiperjs.com/demos/</a>
+      </div>
+
+      <div>
+        <strong>Aos </strong> -&nbsp;<a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+      </div>
+
+      <div>
+        &nbsp;
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
