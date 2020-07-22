@@ -32,23 +32,67 @@
             $('#back-to-top').fadeOut();
         }
     });
- 
+
 
     // Page Marker Actions
-    $('.position__image').attr('src', "./assets/images/markers/about.svg");
+    if (document.body.getAttribute('data-theme') == "dark") {
+        $('.position__image').attr('src', "./assets/images/markers/about-dark.svg");
+    } else {
+        $('.position__image').attr('src', "./assets/images/markers/about.svg");
+    }
 
     $(window).scroll(function () {
         if ($(document).scrollTop() == 0 && $(document).scrollTop() < 333) {
-            $('.position__image').attr('src', "./assets/images/markers/about.svg");
-        } else if ($(document).scrollTop() > 333 && $(document).scrollTop() < 3100) {
-            $('.position__image').attr('src', "./assets/images/markers/portfolio.svg");
-        } else if ($(document).scrollTop() > 3100 && $(document).scrollTop() < 3600) {
-            $('.position__image').attr('src', "./assets/images/markers/resume.svg");
-        } else if ($(document).scrollTop() > 3600) {
-            $('.position__image').attr('src', "./assets/images/markers/contact.svg");
 
+            if (document.body.getAttribute('data-theme') == "dark") {
+                $('.position__image').attr('src', "./assets/images/markers/about-dark.svg");
+            } else {
+                $('.position__image').attr('src', "./assets/images/markers/about.svg");
+            }
+
+        } else if ($(document).scrollTop() > 333 && $(document).scrollTop() < 3100) {
+           
+            if (document.body.getAttribute('data-theme') == "dark") {
+                $('.position__image').attr('src', "./assets/images/markers/portfolio-dark.svg");
+            } else {
+                $('.position__image').attr('src', "./assets/images/markers/portfolio.svg");
+            }
+
+        } else if ($(document).scrollTop() > 3100 && $(document).scrollTop() < 3600) {
+            if (document.body.getAttribute('data-theme') == "dark") {
+                $('.position__image').attr('src', "./assets/images/markers/resume-dark.svg");
+            } else {
+                $('.position__image').attr('src', "./assets/images/markers/resume.svg");
+            }
+
+        } else if ($(document).scrollTop() > 3600) {
+            if (document.body.getAttribute('data-theme') == "dark") {
+                $('.position__image').attr('src', "./assets/images/markers/contact-dark.svg");
+            } else {
+                $('.position__image').attr('src', "./assets/images/markers/contact.svg");
+            }
         }
     });
+
+
+    //Switche theme 
+
+    const toggleSwitch = document.querySelector('#switch-toggle');
+
+    let switchTheme = (event) => {
+        if (event.target.checked) {
+            document.body.setAttribute('data-theme', 'dark');
+            $('.position__image').attr('src', "./assets/images/markers/about-dark.svg");
+        }else{
+            document.body.removeAttribute('data-theme')
+            $('.position__image').attr('src', "./assets/images/markers/about.svg");
+
+        }
+
+    }
+
+    toggleSwitch.addEventListener('click', switchTheme)
+
 
     //initiliaze AOS
     AOS.init(

@@ -5,25 +5,38 @@
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-padding-top: 88px;
-}
-
-body {
-  scroll-padding-top: 88px;
-  font-family: "Manrope", sans-serif;
-}
+ 
 
 :root {
   --text-color: #333333;
   --secondary-color: #2cb1bc;
-  --background: #e5e5e5;
+  --background: #ffffff;
   --button-background: #14919b;
   --footer-background: #333333;
   --card-title: #d9d5d4;
   --background-resume-item: #f6f2f1;
   --white: #ffffff;
+  --logo: #000000;
+ }
+
+[data-theme="dark"] {
+  --background: #222222;
+  --text-color: #ffffff;
+  --footer-background: #14919b;
+  --background-resume-item: #303030;
+  --card-title: #343434;
+  --logo: #ffffff;
+
+ }
+
+
+body {
+  scroll-padding-top: 88px;
+  font-family: "Manrope", sans-serif;
+  background: var(--background);
 }
+
+
 
 .text-blue {
   color: var(--secondary-color);
@@ -49,6 +62,7 @@ body {
 .section__title {
   font-size: 1.5rem;
   position: relative;
+  color: var(--text-color);
 }
 
 .section__title::after {
@@ -66,7 +80,6 @@ body {
 }
 
 /* Position Marker */
-
 .position__marker {
   display: none;
 }
@@ -81,12 +94,13 @@ body {
     transition: all 1s ease-in-out;
   }
 }
-
 /* Position Marker */
+
+
 
 /* Navbar */
 #mainNav {
-  background: var(--white);
+  background: var(--background);
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   font-family: "Manrope", sans-serif;
@@ -146,9 +160,13 @@ body {
 #mainNav.navbar-shrink {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  background-color: var(--white);
+  background-color: var(--background);
   margin: 0 auto;
   box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
+}
+
+.navbar-brand path{
+  fill:var(--logo);
 }
 
 @media screen and (max-width: 767px) {
@@ -197,6 +215,8 @@ body {
   min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
+  color: var(--text-color);
+  position: relative;
 }
 
 #about h1 {
@@ -222,30 +242,29 @@ body {
 }
 
 .behance:hover {
-  color: #0057FF;
+  color: #0057ff;
 }
 
 .twitter:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .instagram:hover {
-  color: #C42289;
+  color: #c42289;
 }
 .dribble:hover {
-  color: #E45189;
+  color: #e45189;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
   #about h1 {
-    font-size: 2.3rem
+    font-size: 2.3rem;
   }
 
   .about__text {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .about__social {
@@ -259,6 +278,79 @@ body {
   }
 }
 /* About */
+
+/* Dark Mode Button */
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 1rem;
+  position: absolute;
+  z-index: 99;
+  right: 3%;
+  top:15%;
+
+
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #cccccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #ffffff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--secondary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width:992px){
+  .theme-switch-wrapper {
+    display: none;
+  }
+}
+
+/* Dark Mode Button */
+
 
 /* Portfolio */
 
@@ -281,6 +373,10 @@ body {
   position: absolute;
   bottom: -5px;
   left: 0;
+}
+
+.card__body{
+  color: var(--text-color);
 }
 
 .card__body span p:first-child {
@@ -370,7 +466,7 @@ body {
 }
 
 .resume__title {
-  color: black;
+  color: var(--text-color);
 }
 
 .resume__title h4 {
@@ -388,7 +484,6 @@ body {
 }
 
 .resume__button {
-  border-radius: 10px;
   background-color: var(--button-background);
   flex: 1;
   margin-top: 6rem;
@@ -399,7 +494,6 @@ body {
   border: 2px solid var(--button-background);
   transition: all 0.3s ease-in-out;
 }
-
 
 .resume__button-text {
   position: absolute;
@@ -419,18 +513,15 @@ body {
   color: var(--white) !important;
   white-space: nowrap;
   transition: all 0.3s ease-in-out;
-
 }
 
-
-.resume__button:hover{
-  background-color: var(--white);
-  
+.resume__button:hover {
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.resume__button:hover .resume__button-text{
+.resume__button:hover .resume__button-text {
   color: var(--button-background) !important;
-
 }
 
 @media screen and (max-width: 992px) {
@@ -489,10 +580,12 @@ body {
 .contact__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
+  color: var(--text-color)
 }
 
 .contact__text {
   font-size: 1rem;
+  color: var(--text-color)
 }
 
 #contact ul {
@@ -501,6 +594,7 @@ body {
 
 .contact__items {
   background: var(--background-resume-item);
+  color: var(--text-color);
 }
 
 .contact__items-number {
@@ -515,7 +609,7 @@ body {
   border-left: 5px solid var(--secondary-color);
   border-bottom-left-radius: 7px;
   font-weight: 600;
-}
+ }
 
 .contact__items2 {
   background: var(--background-resume-item);
@@ -523,6 +617,8 @@ body {
   border-bottom: 5px solid var(--secondary-color);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  color: var(--text-color);
+
 }
 
 .contact__items2-title {
@@ -563,7 +659,7 @@ body {
 
 /* Footer */
 #footer {
-  background-color: var(--text-color);
+  background-color: var(--footer-background);
   color: var(--white);
   padding: 1rem 0;
   margin: 2rem auto 0 auto;
@@ -573,7 +669,7 @@ body {
   font-size: 1.2rem;
 }
 
-.footer__icons a  {
+.footer__icons a {
   color: var(--white);
   font-size: 1.5rem;
 }
@@ -586,15 +682,15 @@ body {
   background: var(--white);
   border: 2px solid var(--white);
   padding: 0.5rem;
-   border-radius: 10px;
-   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__up:hover {
   text-decoration: none;
 }
 .footer__up:hover svg {
-  background: var(--footer-background)  ;
+  background: var(--footer-background);
 }
 
 .footer__up:hover svg path {
