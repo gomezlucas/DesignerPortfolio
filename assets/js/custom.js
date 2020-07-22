@@ -75,10 +75,9 @@
     });
 
 
-    //Switche theme 
+    //Switch theme 
 
     const toggleSwitch = document.querySelector('#switch-toggle');
-
     let switchTheme = (event) => {
         if (event.target.checked) {
             document.body.setAttribute('data-theme', 'dark');
@@ -86,9 +85,7 @@
         }else{
             document.body.removeAttribute('data-theme')
             $('.position__image').attr('src', "./assets/images/markers/about.svg");
-
         }
-
     }
 
     toggleSwitch.addEventListener('click', switchTheme)

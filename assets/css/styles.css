@@ -31,6 +31,10 @@
   --navbar-shadow: hsla(0, 0%, 19%, 0.5);
  }
 
+ html{
+  overflow-x: hidden;
+
+ }
 
 body {
   scroll-padding-top: 88px;
@@ -665,6 +669,8 @@ input:checked + .slider:before {
   color: var(--white);
   padding: 1rem 0;
   margin: 2rem auto 0 auto;
+  overflow: hidden;
+
 }
 
 .footer__name {
