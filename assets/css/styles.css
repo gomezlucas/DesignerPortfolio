@@ -18,8 +18,9 @@
   --white: #ffffff;
   --logo: #000000;
   --navbar-shadow: hsla(228, 6%, 66%, 0.3);
-
- }
+  --background-hamburguer: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --border-hamburger: rgba(0,0,0,.1); 
+}
 
 [data-theme="dark"] {
   --background: #222222;
@@ -29,6 +30,8 @@
   --card-title: #343434;
   --logo: #ffffff;
   --navbar-shadow: hsla(0, 0%, 19%, 0.5);
+  --background-hamburguer: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --border-hamburger: rgba(255,255,255,0.1); 
  }
 
  html{
@@ -173,6 +176,14 @@ body {
 
 .navbar-brand path{
   fill:var(--logo);
+}
+
+.navbar-toggler{
+  border-color: var(--border-hamburger)!important;
+}
+
+.navbar-toggler-icon {
+  background-image:  var(--background-hamburguer)!important;
 }
 
 @media screen and (max-width: 767px) {
