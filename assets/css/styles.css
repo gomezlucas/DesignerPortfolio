@@ -21,6 +21,7 @@ body {
   --footer-background: #333333;
   --card-title: #d9d5d4;
   --background-resume-item: #f6f2f1;
+  --white: #ffffff;
 }
 
 .text-blue {
@@ -120,21 +121,14 @@ body {
 }
 
 #mainNav.navbar-shrink {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: var(--white-color);
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  background-color: var(--white);
   margin: 0 auto;
   box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
 }
 
-#mainNav.navbar-shrink .navbar-brand {
-  transform: scale(1.4);
-}
-
-#mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
-  height: 1.5rem;
-}
+ 
 
 @media screen and (max-width: 768px) {
   .nav-item::after {
@@ -527,3 +521,36 @@ body {
 }
 
 /* Contact */
+
+/* Footer */
+#footer{
+  background-color: var(--text-color);
+  color: var(--white);
+  padding: 1rem 0;
+  margin: 2rem auto 0 auto;
+}
+
+.footer__name{
+  font-size: 1.2rem;
+}
+
+.footer__icons a  svg path {
+  fill: var(--white);
+}
+
+.footer__up{
+  color: white!important;
+}
+
+.footer__up img{
+  background: var(--white);
+  padding: 0.5rem;
+  transform: scale(1.1);
+ border-radius: 10px;
+}
+
+.footer__up:hover{
+  text-decoration: none;
+}
+
+/* Footer */
