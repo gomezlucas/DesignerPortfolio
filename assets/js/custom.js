@@ -3,9 +3,9 @@
 
  
     // Loader Option 
-    window.addEventListener("load", function () {
-        document.querySelector(".preloader-container").style.display = "none";
-    })
+    // window.addEventListener("load", function () {
+    //    document.querySelector(".preloader-container").style.display = "none";
+    //})
 
 
     // Activate scrollspy to add active class to navbar items on scroll

@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title> Baker's Portfolio - Documentation</title>
+  <title> Designers Portfolio- Documentation</title>
 
   <meta name="description" content="" />
   <meta name="author" content="Team Syntax" />
@@ -64,11 +64,6 @@
     .btn-primary {
       background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
       background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
-      background-image: -webkit-gradient(linear,
-          0 0,
-          0 0088cc%,
-          from(#dddddd),
-          to(#0044cc));
       background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
       background-image: -o-linear-gradient(top, #0088cc, #0044cc);
       background-image: linear-gradient(top, #0088cc, #0044cc);
@@ -152,9 +147,7 @@
       <li><a href="#icons" title="Icons">Icons</a></li>
       <li><a href="#logo" title="Logo">Logo</a></li>
       <li><a href="#animation" title="Logo">Animation</a></li>
-      <li><a href="#sliders" title="Sliders">Sliders</a></li>
-      <li>
-        <a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a>
+      <a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a>
       </li>
     </ul>
     <div id="documenter_copyright">
@@ -164,13 +157,13 @@
   </div>
   <div id="documenter_content">
     <section id="documenter_cover">
-      <h1> Baker's Portfolio </h1>
+      <h1> Designer Portfolio  </h1>
       <h2>Responsive HTML5 Template and Boostrap</h2>
       <div id="documenter_buttons"></div>
       <hr />
       <ul>
-        <li>created: 10/07/2020</li>
-        <li>latest update: 10/07/2020</li>
+        <li>created: 22/07/2020</li>
+        <li>latest update: 22/07/2020</li>
         <li>by: @lucasD</li>
 
         <li>
@@ -256,11 +249,54 @@
 - assets/
   - css/
     - style.css                      - (Main CSS file) 
-    - swiper/swiper-bundle.min.css   - (Swiper Minified CSS file)
     - bootstrap/bootstrap.min.css    - (Bootstrap Minified CSS file)
     - aos/aos.css                    - (Aos Minified CSS file)
 
 </pre>
+
+      <div>
+        Template colours, characteristics:
+        <pre class="prettyprint lang-css linenums">
+:root {
+--family-font: "Manrope", sans-serif;
+--text-color: #333333;
+--secondary-color: #2cb1bc;
+--background: #ffffff;
+--button-background: #14919b;
+--footer-background: #333333;
+--card-title: #d9d5d4;
+--background-resume-item: #f6f2f1;
+--white: #ffffff;
+--logo: #000000;
+--navbar-shadow: hsla(228, 6%, 66%, 0.3);
+--background-hamburguer: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' 
+width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' 
+stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4
+ 23h22'/%3e%3c/svg%3e");
+--border-hamburger: rgba(0, 0, 0, 0.1);
+}
+</pre>
+      </div>
+      <div>
+        This template comes with a dark version you can change its characteristics in:
+        <pre class="prettyprint lang-css linenums">
+[data-theme="dark"] {
+  --background: #222222;
+  --text-color: #ffffff;
+  --footer-background: #14919b;
+  --background-resume-item: #303030;
+  --card-title: #343434;
+  --logo: #ffffff;
+  --navbar-shadow: hsla(0, 0%, 19%, 0.5);
+  --background-hamburguer: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' 
+  width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29'
+   stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'
+   /%3e%3c/svg%3e");
+  --border-hamburger: rgba(255, 255, 255, 0.1);
+}
+</pre>
+      </div>
+
     </section>
     <section id="javascript">
       <div class="page-header">
@@ -290,10 +326,6 @@
 &lt;script src=&quot;./assets/js/bootstrap/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
 &lt;!-- Popper JS --&gt;
 &lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
-&lt;!-- Swiper JS --&gt;
-&lt;script src=&quot;/assets/js/swiper/swiper-bundle.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
-&lt;!-- Swiper Custome JS --&gt;
-&lt;script src=&quot;./assets/js/swiper/swiperjs-custom.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Aos JS --&gt;
 &lt;script src=&quot;./assets/js/aos/aos.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Custom JS --&gt;
@@ -316,28 +348,46 @@
       </div>
       <div>
         <pre class="prettyprint lang-html linenums">
-          @font-face {
-            font-family: "Clicker Script";
-            src: url("../fonts/ClickerScript-Regular.ttf");
-          }
-          
           /*default version */
-          @font-face {
-            font-family: "Nunito Sans";
-            src: url("../fonts/NunitoSans-Regular.ttf");
-          }
-          
-          /*Light version */
-          @font-face {
-            font-family: "Nunito Sans";
-            src: url("../fonts/NunitoSans-Light.ttf");
-          }
-          
-          /*Bold version */
-          @font-face {
-            font-family: "Nunito Sans";
-            src: url("../fonts/NunitoSans-Bold.ttf");
-          }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+
+/*medium version */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Light version */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Light.ttf");
+  font-weight: light;
+  font-style: normal;
+}
+
+/*Bold version */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.ttf");
+  font-weight: 600;
+   font-style: normal;
+}
+
+/*Bold version */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
                       </pre>
       </div>
       <p>&nbsp;</p>
@@ -351,7 +401,7 @@
           &nbsp;
         </div>
         <div>
-          Then edit --header-font or --text-font in
+          Then edit --family-font: in
         </div>
         <div>
           &nbsp;
@@ -359,30 +409,11 @@
         <div>
           <pre class="prettyprint lang-css linenums">
             :root {
-              --title-font: "Clicker Script", cursive;
-              --text-font: "Nunito Sans", sans-serif;
-              --primary-color: #664e00;
-              --secondary-color: #e6b001;
-              --title-color: #cc9d01;
-              --navbar-text: #4b420b;
-              --grey-color: #e5e5e5;
-              --green-color: #adb901;
-              --background-masthead: linear-gradient( 
-                90deg, 
-                 rgba(229,229,229,1) 0%,
-                 rgba(243,243,243,1) 65%, 
-                 rgba(255,255,255,1) 97%);
-              --background-about: linear-gradient(
-                34.34deg,
-                #a7b2c3 19.51%,
-                #ccd5df 31.73%,
-                #d5dee6 50.37%,
-                #d5dee6 64.83%
-              );
-              --footer-color: #bbc443;
-              --white-color: #fff;
-              --black-color: #000000;
-            }</pre>
+              --family-font: "Manrope", sans-serif;
+                          }
+            </pre>
+
+
         </div>
       </div>
     </section>
@@ -392,7 +423,12 @@
         <hr class="notop" />
       </div>
       <div>
-        All Icons are located in the images directory
+        All Icons are located in the images directory and the social media are imported from Font Awesome
+
+        <pre class="prettyprint lang-html linenums">
+          &lt;!-- Font Awesome --&gt;
+          &lt;script src=&quot;./assets/js/fontawesome/all.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+        </pre>
       </div>
       <div>
         &nbsp;
@@ -436,7 +472,7 @@
         //initiliaze AOS
         AOS.init(
             {
-                offset: 100,
+                offset: 50,
                 disable: function () {
                     var maxWidth = 650;
                     return window.innerWidth &gt; maxWidth;
@@ -456,112 +492,7 @@
           href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
       </p>
     </section>
-    <section id="sliders">
-      <div class="page-header">
-        <h3>Sliders</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        SwipeJs slider is the slider you will find in the content. It's an essay
-        to use lighweight carousel with some decent features.
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        <div>
-          <div>
-            Estate Section slider has class &#39;swiper-slide&#39; and each slide
-            has &#39;&lt;div class=&quot;portfolio__card&quot;&gt;&#39; wrapper
-            for easy find where slide html code start. If you want to remove or add some
-            slide just remove/add div with all content like this &#39;&lt;div
-            class=&quot;portfolio__card&quot;&gt;&#39;
-          </div>
-          <div>
-            &nbsp;
-          </div>
-        </div>
-        <pre class="prettyprint lang-html linenums">
-          &lt;!-- Slider main container --&gt;
-          &lt;div class=&quot;swiper-container&quot;&gt;
-            &lt;!-- Additional required wrapper --&gt;
-            &lt;div class=&quot;swiper-wrapper&quot;&gt;
-              &lt;!-- Slides --&gt;
-              &lt;div class=&quot;swiper-slide&quot;&gt;
-                &lt;div class=&quot;portfolio__card&quot;&gt;
-                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
-                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; Desserts &lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;swiper-slide&quot;&gt;
-                &lt;div class=&quot;portfolio__card&quot;&gt;
-                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
-                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; cupcakes &lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;swiper-slide&quot;&gt;
-                &lt;div class=&quot;portfolio__card&quot;&gt;
-                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
-                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; Cakes &lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;!-- If we need pagination --&gt;
-            &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
-      
-            &lt;!-- If we need navigation buttons --&gt;
-            &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
-      </pre>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          If you want change option for sliders you need to open
-          assets/js/swiper/swiperjs-custom.js and find &#39;// Our Sliders Start&#39; function
-          and set true/false for option what you wont to change.
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <pre class="prettyprint lang-js linenums">
-          // Swiper JS
-          var mySwiper = new Swiper('.swiper-container', {
-             // Optional parameters
-             direction: 'horizontal',
-             loop: true,
-             // Navigation arrows
-             navigation: {
-                 nextEl: '.swiper-button-next',
-                 prevEl: '.swiper-button-prev',
-             },
-             breakpoints: {
-                 640: {
-                   slidesPerView: 1,
-                   spaceBetween: 20,
-                 },
-                 768: {
-                   slidesPerView: 2,
-                   spaceBetween: 40,
-                 },
-                 1024: {
-                   slidesPerView: 3,
-                   spaceBetween: 50,
-                 },
-               }
-         
-          
-         })
-</pre>
-      </div>
-      <p>
-        You can find more documentation here&nbsp;<a href="https://swiperjs.com/demos/"
-          target="_blank">https://swiperjs.com/demos/</a>
-      </p>
-    </section>
+
     <section id="sources_and_credits">
       <div class="page-header">
         <h3>Sources and Credits</h3>
@@ -592,11 +523,9 @@
       <div>
         <strong>Popper Js</strong> -&nbsp;<a href="https://popper.js.org/">https://popper.js.org/</a>
       </div>
-
       <div>
-        <strong>Swiper Js</strong> -&nbsp;<a href="https://swiperjs.com/demos/">https://swiperjs.com/demos/</a>
+        <strong>Font Awesome </strong> -&nbsp;<a href="https://fontawesome.com/">https://fontawesome.com/</a>
       </div>
-
       <div>
         <strong>Aos </strong> -&nbsp;<a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
       </div>
