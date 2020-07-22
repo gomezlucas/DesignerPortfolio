@@ -17,6 +17,8 @@
   --background-resume-item: #f6f2f1;
   --white: #ffffff;
   --logo: #000000;
+  --navbar-shadow: hsla(228, 6%, 66%, 0.3);
+
  }
 
 [data-theme="dark"] {
@@ -26,7 +28,7 @@
   --background-resume-item: #303030;
   --card-title: #343434;
   --logo: #ffffff;
-
+  --navbar-shadow: hsla(0, 0%, 19%, 0.5);
  }
 
 
@@ -162,7 +164,7 @@ body {
   padding-bottom: 0.1rem;
   background-color: var(--background);
   margin: 0 auto;
-  box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
+  box-shadow: 3px 1px 13px var(--navbar-shadow);
 }
 
 .navbar-brand path{
