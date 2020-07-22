@@ -37,7 +37,9 @@ body {
 .link:hover {
   text-decoration: none;
   color: var(--text-color);
+  opacity: 0.7;
 }
+
 @media screen and (min-width: 500px) {
   .link {
     font-size: 1.2rem;
@@ -193,6 +195,8 @@ body {
 #about .container-fluid {
   width: 100%;
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 #about h1 {
@@ -392,7 +396,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid var(--button-background);
+  transition: all 0.3s ease-in-out;
 }
+
 
 .resume__button-text {
   position: absolute;
@@ -409,9 +416,21 @@ body {
   -o-transform: rotate(-90deg);
   /*all */
   transform: rotate(-90deg);
-  color: white !important;
-
+  color: var(--white) !important;
   white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.resume__button:hover{
+  background-color: var(--white);
+  
+}
+
+.resume__button:hover .resume__button-text{
+  color: var(--button-background) !important;
+
 }
 
 @media screen and (max-width: 992px) {
@@ -554,23 +573,32 @@ body {
   font-size: 1.2rem;
 }
 
-.footer__icons a svg path {
-  fill: var(--white);
+.footer__icons a  {
+  color: var(--white);
+  font-size: 1.5rem;
 }
 
 .footer__up {
-  color: white !important;
+  color: var(--white) !important;
 }
 
-.footer__up img {
+.footer__up svg {
   background: var(--white);
+  border: 2px solid var(--white);
   padding: 0.5rem;
-  transform: scale(1.1);
-  border-radius: 10px;
+   border-radius: 10px;
+   transition: all 0.3s ease-in-out;
 }
 
 .footer__up:hover {
   text-decoration: none;
+}
+.footer__up:hover svg {
+  background: var(--footer-background)  ;
+}
+
+.footer__up:hover svg path {
+  stroke: var(--white);
 }
 
 /* Footer */
