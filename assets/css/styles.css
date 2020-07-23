@@ -283,9 +283,15 @@ body {
   font-size: 1.3rem;
 }
 
+.about__socialContainer{
+  position: absolute;
+  right: 46px;
+  bottom: 84px;
+}
+
 .about__social {
   margin: 1rem 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   transition: color 0.2s ease-in-out;
 }
@@ -321,9 +327,13 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #about {
     padding-top: 88px;
+  }
+
+  .about__socialContainer{
+    position: initial;
   }
 }
 /* About */
