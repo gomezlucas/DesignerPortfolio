@@ -127,13 +127,17 @@ body {
   display: none;
   }
 
-@media screen and (min-width: 1250px) and (max-width: 1800px) {
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
   .position__marker {
     display: initial;
     position: fixed;
     top: 40%;
     left: 20px;
     z-index: 9999;
+    max-width: 1440px;
+    right: 0px;
+    left: 25px;
+    margin: 0 auto;
     transition: all 1s ease-in-out;
     }
 }
