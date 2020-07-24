@@ -289,7 +289,7 @@ body {
 .about__socialContainer{
   position: absolute;
   right: 46px;
-  bottom: 84px;
+  bottom: -60px;
 }
 
 .about__social {
