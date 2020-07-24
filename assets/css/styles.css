@@ -43,6 +43,8 @@ body {
   scroll-padding-top: 88px;
   font-family: "Manrope", sans-serif;
   background: var(--background);
+  overflow-x: hidden;
+
 }
 
 
@@ -123,7 +125,7 @@ body {
 /* Position Marker */
 .position__marker {
   display: none;
-}
+  }
 
 @media screen and (min-width: 1250px) and (max-width: 1800px) {
   .position__marker {
@@ -133,11 +135,12 @@ body {
     left: 20px;
     z-index: 9999;
     transition: all 1s ease-in-out;
-  }
+    }
 }
 /* Position Marker */
 
 
+ 
 
 /* Navbar */
 #mainNav {
@@ -279,7 +282,7 @@ body {
 }
 
 .about__text {
-  line-height: 2;
+  line-height: 1.6;
   font-size: 1.3rem;
 }
 
@@ -695,7 +698,7 @@ input:checked + .slider:before {
   }
 
   .contact__text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .contact__items {
@@ -723,6 +726,10 @@ input:checked + .slider:before {
   padding: 1rem 0;
   margin: 2rem auto 0 auto;
   overflow: hidden;
+}
+
+#footer .container-fluid {
+  max-width: 1440px;
 
 }
 
