@@ -134,10 +134,6 @@ body {
     top: 40%;
     left: 20px;
     z-index: 9999;
-    max-width: 1440px;
-    right: 0px;
-    left: 25px;
-    margin: 0 auto;
     transition: all 1s ease-in-out;
     }
 }
